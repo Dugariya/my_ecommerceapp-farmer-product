@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myecommerceapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/rgpvlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyECOMMERCEApp">
+        <activity android:name=".SplacScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activitys.UserProfileActivity" />
+        <activity android:name=".activitys.AddressActivity" />
+        <activity android:name=".activitys.PaymentActivity" />
+        <activity android:name=".activitys.AddAddressActivity2" />
+        <activity android:name=".activitys.CartActivity" />
+        <activity android:name=".activitys.ShowAllActivity" />
+        <activity android:name=".activitys.DetailedActivity" />
+
+        <activity android:name=".activitys.RegistrationActivity" />
+        <activity android:name=".activitys.LoginActivity">
+
+        </activity>
+        <activity android:name=".activitys.MainActivity" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_8BsIF9LsPZV0kG" />
+    </application>
+
+</manifest>
